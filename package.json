@@ -4,11 +4,11 @@
   "description": "Web application boilerplate",
   "main": "index.js",
   "scripts": {
-    "db:create": "env NODE_PATH=. node ./tasks/db/create",
-    "db:drop": "env NODE_PATH=. node ./tasks/db/drop",
+    "db:create": "node ./tasks/db/create",
+    "db:drop": "node ./tasks/db/drop",
     "db:migrate": "knex migrate:latest",
-    "db:seed": "env NODE_PATH=. node ./tasks/db/seed",
-    "start:backend": "env NODE_PATH=. nodemon backend/server.js",
+    "db:seed": "node ./tasks/db/seed",
+    "start:backend": "nodemon backend/server.js",
     "start:frontend": "cd frontend && npm run dev",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
