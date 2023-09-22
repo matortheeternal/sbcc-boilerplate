@@ -8,8 +8,6 @@ let loadFiles = function(expr) {
 };
 
 let loadApp = function() {
-  loadFiles('scalars/*.js');
-  loadFiles('resources/*.js');
   loadFiles('actions/**/*.js');
 };
 
