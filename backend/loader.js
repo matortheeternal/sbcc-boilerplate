@@ -1,5 +1,5 @@
 const jetpack = require('fs-jetpack');
-const appDir = jetpack.dir('app');
+const appDir = jetpack.dir('backend');
 
 let loadFiles = function(expr) {
   appDir.find({ matching: expr }).forEach(filePath => {

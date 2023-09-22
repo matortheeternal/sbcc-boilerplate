@@ -8,7 +8,7 @@
     "db:drop": "env NODE_PATH=. node ./tasks/db/drop",
     "db:migrate": "knex migrate:latest",
     "db:seed": "env NODE_PATH=. node ./tasks/db/seed",
-    "start:backend": "env NODE_PATH=. nodemon app/server.js",
+    "start:backend": "env NODE_PATH=. nodemon backend/server.js",
     "start:frontend": "cd frontend && npm run dev",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
